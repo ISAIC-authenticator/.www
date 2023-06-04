@@ -1,0 +1,1332 @@
+<!DOCTYPE html>
+<html
+  lang="en"
+  dir="ltr"
+  prefix="content: http://purl.org/rss/1.0/modules/content/  dc: http://purl.org/dc/terms/  foaf: http://xmlns.com/foaf/0.1/  og: http://ogp.me/ns#  rdfs: http://www.w3.org/2000/01/rdf-schema#  schema: http://schema.org/  sioc: http://rdfs.org/sioc/ns#  sioct: http://rdfs.org/sioc/types#  skos: http://www.w3.org/2004/02/skos/core#  xsd: http://www.w3.org/2001/XMLSchema# "
+>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-197854341-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', 'UA-197854341-1', { groups: 'default', anonymize_ip: true });
+    </script>
+    <meta name="Generator" content="Drupal 9 (https://www.drupal.org)" />
+    <meta name="MobileOptimized" content="width" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/themes/isaic_theme/faviconv2.png" type="image/png" />
+    <link rel="canonical" href="https://isaic.ca/blog/migrating-to-cloud-computing-part-1" />
+    <link rel="shortlink" href="https://isaic.ca/blog/migrating-to-cloud-computing-part-1" />
+
+    <title>
+      Migrating to Cloud Computing Part 1: Interview with Concordia, Cybera, and Pulse Medica |
+      ISAIC
+    </title>
+    <link
+      rel="stylesheet"
+      media="all"
+      href="/sites/default/files/css/css_1ZdPdPMpX8ch16Dsgzh8-trW9PbrKvK7yJNhYQ99ENA.css"
+    />
+  </head>
+  <body class="pushable">
+    <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+      <div class="layout-container">
+        <header>
+          <div class="region region-header">
+            <div
+              id="block-isaic-theme-header"
+              class="block block-block-content block-block-content7dd88fcc-da91-4fa3-acc2-4dca040f53b9"
+            >
+              <div
+                class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"
+              >
+                <div class="header">
+                  <div class="callout-header">
+                    <div class="container">
+                      <a class="callout-link" href="/contact"
+                        >Book a discovery or test our environment today!</a
+                      >
+                    </div>
+                  </div>
+
+                  <div class="container flex-cont">
+                    <div class="nav-logo-holder">
+                      <a class="logo-link top-logo" href="/index"
+                        ><img
+                          alt=""
+                          class="logo-icon"
+                          src="/sites/default/files/inline-images/logo-small.png"
+                        />
+                      </a>
+                      <a class="logo-link bot-logo" href="/index">
+                        <img
+                          alt=""
+                          class="logo-icon"
+                          src="/sites/default/files/inline-images/isaic-icon-logo.png"
+                        />
+                      </a>
+                    </div>
+                    <button class="hamburger is-active" type="button">
+                      <span class="hamburger-box"><span class="hamburger-inner">‌</span> </span>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="slide-in-menu">
+                  <div class="nav-cont">
+                    <a class="menu-link" href="/index"
+                      ><img alt="" src="/sites/default/files/inline-images/isaic-white-logo.png"
+                    /></a>
+
+                    <ul class="menu-list">
+                      <li class="menu-item"><a class="menu-link" href="/index">Home</a></li>
+                      <li class="menu-item">
+                        <a class="menu-link" href="/ai-garage">AI Garage</a>
+                      </li>
+                      <li class="menu-item">
+                        <a class="menu-link" href="https://vmod.isaic.ca">VM on Demand</a>
+                      </li>
+                      <li class="menu-item">
+                        <a class="menu-link" href="/ai-journey">AI Journey</a>
+                      </li>
+                      <li class="menu-item">
+                        <a class="menu-link" href="/compute-configurations">Configurations</a>
+                      </li>
+                      <li class="menu-item">
+                        <a class="menu-link" href="/data-sandbox">Data Sandbox</a>
+                      </li>
+                      <li class="menu-item">
+                        <a class="menu-link" href="/offerings">Offerings</a>
+                      </li>
+                      <li class="menu-item">
+                        <a class="menu-link" href="/pricing">Pricing</a>
+                      </li>
+                      <li class="menu-item"><a class="menu-link" href="/about">About</a></li>
+                      <li class="menu-item"><a class="menu-link" href="/blog">Blog</a></li>
+                      <li class="menu-item">
+                        <a class="menu-link" href="/contact">Contact</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+
+        <main role="main">
+          <a id="main-content" tabindex="-1"></a>
+          <div class="layout-content">
+            <div class="region region-content">
+              <div data-drupal-messages-fallback class="hidden"></div>
+              <div
+                id="block-isaic-theme-page-title"
+                class="block block-core block-page-title-block"
+              >
+                <h1 class="page-title">
+                  <span class="field field--name-title field--type-string field--label-hidden"
+                    >Migrating to Cloud Computing Part 1: Interview with Concordia, Cybera, and
+                    Pulse Medica</span
+                  >
+                </h1>
+              </div>
+              <div
+                id="block-isaic-theme-content"
+                class="block block-system block-system-main-block"
+              >
+                <article
+                  data-history-node-id="18"
+                  role="article"
+                  about="/blog/migrating-to-cloud-computing-part-1"
+                  class="node node--type-blog node--view-mode-full"
+                >
+                  <div class="node__content">
+                    <div
+                      class="field field--name-field-author field--type-string field--label-above"
+                    >
+                      <div class="field__label">Author</div>
+                      <div class="field__item">ISAIC</div>
+                    </div>
+
+                    <div
+                      class="field field--name-field-blog-date field--type-datetime field--label-above"
+                    >
+                      <div class="field__label">Date</div>
+                      <div class="field__item">
+                        <time datetime="2022-06-06T12:00:00Z" class="datetime">2022-06-06</time>
+                      </div>
+                    </div>
+
+                    <div
+                      class="field field--name-field-banner-image field--type-image field--label-hidden field__item"
+                    >
+                      <img
+                        src="/sites/default/files/styles/extra_large/public/2022-06/Migrating&#32;to&#32;Cloud&#32;Computing&#32;Part&#32;1.jpg@itok=ENTEaZ04"
+                        width="665"
+                        height="374"
+                        alt="migrating-to-cloud-computing-part-1-isaic"
+                        loading="lazy"
+                        typeof="foaf:Image"
+                        class="image-style-extra-large"
+                      />
+                    </div>
+
+                    <div
+                      class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"
+                    >
+                      <script id="mcjs">
+                        !(function (c, h, i, m, p) {
+                          (m = c.createElement(h)),
+                            (p = c.getElementsByTagName(h)[0]),
+                            (m.async = 1),
+                            (m.src = i),
+                            p.parentNode.insertBefore(m, p);
+                        })(
+                          document,
+                          'script',
+                          'https://chimpstatic.com/mcjs-connected/js/users/024e59293b8cf498e458fad19/24cf431dd5db0b9b3019e6993.js'
+                        );
+                      </script>
+                      <script>
+                        if (cookieStore) {
+                          cookieStore.delete('MCPopupClosed');
+                        }
+                      </script>
+                      <p>
+                        <span
+                          ><span
+                            ><span
+                              ><span
+                                ><span><span>According to </span></span></span
+                              ></span
+                            ></span
+                          ></span
+                        ><a
+                          href="https://filecache.mediaroom.com/mr5mr_ibmnews/183710/Roadblock-to-Scale-exec-summary.pdf"
+                          ><span
+                            ><span
+                              ><span
+                                ><span
+                                  ><span
+                                    ><span
+                                      ><span><span>IBM’s study in 2019</span></span></span
+                                    ></span
+                                  ></span
+                                ></span
+                              ></span
+                            ></span
+                          ></a
+                        ><span
+                          ><span
+                            ><span
+                              ><span
+                                ><span
+                                  ><span
+                                    >, almost 50% large companies adopted AI while small medium
+                                    enterprises (SMEs) adopted only 30%. One of the requirements to
+                                    adopt AI is to have the appropriate infrastructure and ISAIC is
+                                    here to help you migrate to the cloud.</span
+                                  ></span
+                                ></span
+                              ></span
+                            ></span
+                          ></span
+                        >
+                      </p>
+
+                      <p>
+                        <span
+                          ><span
+                            ><span
+                              ><span
+                                ><span
+                                  ><span
+                                    >In celebration of its anniversary, Alberta Machine Intelligence
+                                    Institute (AMII) hosted
+                                  </span></span
+                                ></span
+                              ></span
+                            ></span
+                          ></span
+                        ><a href="https://www.ai-week.ca/"
+                          ><span
+                            ><span
+                              ><span
+                                ><span
+                                  ><span
+                                    ><span
+                                      ><span><span>AI Week</span></span></span
+                                    ></span
+                                  ></span
+                                ></span
+                              ></span
+                            ></span
+                          ></a
+                        ><span
+                          ><span
+                            ><span
+                              ><span
+                                ><span
+                                  ><span>
+                                    from May 24-27, 2022. ISAIC proudly took part in the community
+                                    events of AI Week, presenting to almost 60 people about Cloud
+                                    Computing Migration.</span
+                                  ></span
+                                ></span
+                              ></span
+                            ></span
+                          ></span
+                        >
+                      </p>
+
+                      <p> </p>
+
+                      <p>
+                        <span
+                          ><span
+                            ><span
+                              ><span
+                                ><em
+                                  ><span
+                                    >ISAIC: Maybe we can start with introductions. Can you share
+                                    about yourself?</span
+                                  ></em
+                                ></span
+                              ></span
+                            ></span
+                          ></span
+                        >
+                      </p>
+
+                      <p>
+                        <span
+                          ><span
+                            ><span
+                              ><strong
+                                ><span><span>Concordia:</span></span></strong
+                              ></span
+                            ></span
+                          ></span
+                        ><span
+                          ><span
+                            ><span
+                              ><span
+                                ><span
+                                  ><span>
+                                    My name is Ed Boraas and I’m the Chief Information Officer and
+                                    Research and Development Lead for the AI Centre at
+                                  </span></span
+                                ></span
+                              ></span
+                            ></span
+                          ></span
+                        ><a href="https://concordia.ab.ca/"
+                          ><span
+                            ><span
+                              ><span
+                                ><span
+                                  ><span
+                                    ><span
+                                      ><span
+                                        ><span>Concordia University of Edmonton</span></span
+                                      ></span
+                                    ></span
+                                  ></span
+                                ></span
+                              ></span
+                            ></span
+                          ></a
+                        ><span
+                          ><span
+                            ><span
+                              ><span
+                                ><span
+                                  ><span
+                                    >, which is located in Edmonton. We have about 3,500 students in
+                                    various programs, primarily in undergraduate programs but we
+                                    also have master’s and doctoral programs. </span
+                                  ></span
+                                ></span
+                              ></span
+                            ></span
+                          ></span
+                        >
+                      </p>
+
+                      <p>
+                        <strong
+                          ><span
+                            ><span
+                              ><span
+                                ><span><span>Cybera:</span></span></span
+                              ></span
+                            ></span
+                          ></strong
+                        ><span
+                          ><span
+                            ><span
+                              ><span
+                                ><span
+                                  ><span>
+                                    Sure, I’m the data science program manager at
+                                  </span></span
+                                ></span
+                              ></span
+                            ></span
+                          ></span
+                        ><a href="https://www.cybera.ca/"
+                          ><span
+                            ><span
+                              ><span
+                                ><span
+                                  ><span
+                                    ><span
+                                      ><span><span>Cybera</span></span></span
+                                    ></span
+                                  ></span
+                                ></span
+                              ></span
+                            ></span
+                          ></a
+                        ><span
+                          ><span
+                            ><span
+                              ><span
+                                ><span
+                                  ><span
+                                    >, a non-profit company based in Alberta. We manage and operate
+                                    the research and education network in the province. But for the
+                                    past 12 plus years, we’ve been doing above the network type of
+                                    services, such as cloud computing and recently, we’ve been
+                                    heavily invested in data science. I do everything from
+                                    internal-facing projects around data policies to external-facing
+                                    projects with clients, which are typically SMEs or other
+                                    nonprofits.</span
+                                  ></span
+                                ></span
+                              ></span
+                            ></span
+                          ></span
+                        >
+                      </p>
+
+                      <p>
+                        <span
+                          ><span
+                            ><span
+                              ><strong
+                                ><span><span>Pulse Medica:</span></span></strong
+                              ></span
+                            ></span
+                          ></span
+                        ><span
+                          ><span
+                            ><span
+                              ><span
+                                ><span
+                                  ><span>
+                                    I’m Nir Katchinskiy, the CEO and co-founder of
+                                  </span></span
+                                ></span
+                              ></span
+                            ></span
+                          ></span
+                        ><a href="https://www.pulsemedica.com/"
+                          ><span
+                            ><span
+                              ><span
+                                ><span
+                                  ><span
+                                    ><span
+                                      ><span><span>Pulse Medica</span></span></span
+                                    ></span
+                                  ></span
+                                ></span
+                              ></span
+                            ></span
+                          ></a
+                        ><span
+                          ><span
+                            ><span
+                              ><span
+                                ><span
+                                  ><span>
+                                    and here’s Chris who oversees the machine learning team.
+                                    Essentially, Pulse Medica develops a medical device platform for
+                                    a treatment of retinal disease. Such disease affects 500 million
+                                    people worldwide and it isn’t great. We’re trying to change it
+                                    by developing a medical device that performs image-guided laser
+                                    surgery driven and enabled by ML. Thus, Machine Learning plays a
+                                    big aspect of everything that we’re doing in terms of
+                                    diagnostics, creation, or treatment planning, and then the
+                                    treatment itself.</span
+                                  ></span
+                                ></span
+                              ></span
+                            ></span
+                          ></span
+                        >
+                      </p>
+
+                      <p> </p>
+
+                      <p>
+                        <span
+                          ><span
+                            ><span
+                              ><span
+                                ><em><span>ISAIC:</span></em></span
+                              ></span
+                            ></span
+                          ></span
+                        ><span
+                          ><span
+                            ><span
+                              ><span
+                                ><span
+                                  ><span>
+                                    Thank you. Ed, maybe you can tell us more about
+                                  </span></span
+                                ></span
+                              ></span
+                            ></span
+                          ></span
+                        ><a href="https://concordia.ab.ca/external-affairs/aipathways/"
+                          ><span
+                            ><span
+                              ><span
+                                ><span
+                                  ><span
+                                    ><span
+                                      ><span><span>AI Pathways Partnerships</span></span></span
+                                    ></span
+                                  ></span
+                                ></span
+                              ></span
+                            ></span
+                          ></a
+                        ><span
+                          ><span
+                            ><span
+                              ><span
+                                ><span><span>?</span></span></span
+                              ></span
+                            ></span
+                          ></span
+                        >
+                      </p>
+
+                      <p>
+                        <span
+                          ><span
+                            ><span
+                              ><strong
+                                ><span><span>Concordia:</span></span></strong
+                              ></span
+                            ></span
+                          ></span
+                        ><span
+                          ><span
+                            ><span
+                              ><span
+                                ><span
+                                  ><span>
+                                    So, our relationship with ISAIC is primarily related to AIPP.
+                                    The program involves training folks in all stages of life to AI
+                                    and ML. I’m really happy to be a part of something collaborative
+                                    like that to build educational content for people. Primarily in
+                                    our case, we are looking for development and support for the
+                                    student projects and student-led research.</span
+                                  ></span
+                                ></span
+                              ></span
+                            ></span
+                          ></span
+                        >
+                      </p>
+
+                      <p> </p>
+
+                      <p>
+                        <span
+                          ><span
+                            ><span
+                              ><span
+                                ><em><span>ISAIC:</span></em></span
+                              ></span
+                            ></span
+                          ></span
+                        ><span
+                          ><span
+                            ><span
+                              ><span
+                                ><span
+                                  ><span>
+                                    Byron, you mentioned something about cloud computing and it
+                                    makes me wonder… Can you tell us more about AI projects Cybera
+                                    has?</span
+                                  ></span
+                                ></span
+                              ></span
+                            ></span
+                          ></span
+                        >
+                      </p>
+
+                      <p>
+                        <span
+                          ><span
+                            ><span
+                              ><strong
+                                ><span><span>Cybera:</span></span></strong
+                              ></span
+                            ></span
+                          ></span
+                        ><span
+                          ><span
+                            ><span
+                              ><span
+                                ><span
+                                  ><span>
+                                    We typically work with clients through different formats, such
+                                    as direct consultation for different spaces, including green
+                                    tech projects and healthcare projects. If there’s an alignment
+                                    of project goals and organizational values, we also work with
+                                    companies and SMEs through our industry
+                                  </span></span
+                                ></span
+                              ></span
+                            ></span
+                          ></span
+                        ><a href="https://www.cybera.ca/fellowships/"
+                          ><span
+                            ><span
+                              ><span
+                                ><span
+                                  ><span
+                                    ><span
+                                      ><span><span>fellowship</span></span></span
+                                    ></span
+                                  ></span
+                                ></span
+                              ></span
+                            ></span
+                          ></a
+                        ><span
+                          ><span
+                            ><span
+                              ><span
+                                ><span
+                                  ><span>
+                                    program. That is now called the Applied Data Science Lab for
+                                    Economic Development Program and that’s how we’re connected with
+                                    ISAIC.</span
+                                  ></span
+                                ></span
+                              ></span
+                            ></span
+                          ></span
+                        >
+                      </p>
+
+                      <p> </p>
+
+                      <p>
+                        <span
+                          ><span
+                            ><span
+                              ><span
+                                ><em><span>ISAIC:</span></em></span
+                              ></span
+                            ></span
+                          ></span
+                        ><span
+                          ><span
+                            ><span
+                              ><span
+                                ><span
+                                  ><span>
+                                    Chris, maybe you can tell us more about Pulse Medica’s
+                                    projects?</span
+                                  ></span
+                                ></span
+                              ></span
+                            ></span
+                          ></span
+                        >
+                      </p>
+
+                      <p>
+                        <span
+                          ><span
+                            ><span
+                              ><strong
+                                ><span><span>Pulse Medica:</span></span></strong
+                              ></span
+                            ></span
+                          ></span
+                        ><span
+                          ><span
+                            ><span
+                              ><span
+                                ><span
+                                  ><span>
+                                    Most of our projects revolve around the idea of AI and guided
+                                    surgery. We use AI to control hardware and plan
+                                    surgeries. </span
+                                  ></span
+                                ></span
+                              ></span
+                            ></span
+                          ></span
+                        >
+                      </p>
+
+                      <p>
+                        <span
+                          ><span
+                            ><span
+                              ><span
+                                ><span
+                                  ><span
+                                    >For example, our first project was identifying something called
+                                    micro aneurysms on retina images, which is a disease called
+                                    Diabetic Retinopathy. It will cause debilitating degradation of
+                                    vision. Our goal for this project was to look at these images
+                                    and detect where in the images we should target for the
+                                    treatment with our laser system. Another way to do this is to
+                                    hire an opthamologist and spend thousands of hours annotating
+                                    images. But we can’t really do that because we’re an early-stage
+                                    startup. Instead, we used semi-supervised learning or
+                                    unsupervised learning to build these models so we can detect
+                                    areas of the disease and build treatment plans without the need
+                                    of expert annotation. </span
+                                  ></span
+                                ></span
+                              ></span
+                            ></span
+                          ></span
+                        >
+                      </p>
+
+                      <p>
+                        <span
+                          ><span
+                            ><span
+                              ><span
+                                ><span
+                                  ><span
+                                    >Another project we’re working on for, an example, would be the
+                                    Floater tracking. Floaters are blurry squiggles that flow
+                                    through your eyes as you’re looking into a bright light. The key
+                                    interest for us is to find ways to accurately track these in 2D
+                                    and eventually, 3D so we can target them for treatment. We have
+                                    been building AI models to essentially track these in real-time
+                                    very accurately.</span
+                                  ></span
+                                ></span
+                              ></span
+                            ></span
+                          ></span
+                        >
+                      </p>
+
+                      <p> </p>
+
+                      <p>
+                        <span
+                          ><span
+                            ><span
+                              ><span
+                                ><em><span>ISAIC:</span></em></span
+                              ></span
+                            ></span
+                          ></span
+                        ><span
+                          ><span
+                            ><span
+                              ><span
+                                ><span
+                                  ><span>
+                                    Now, maybe all of you can share the success of your AI
+                                    projects.</span
+                                  ></span
+                                ></span
+                              ></span
+                            ></span
+                          ></span
+                        >
+                      </p>
+
+                      <p>
+                        <span
+                          ><span
+                            ><span
+                              ><strong
+                                ><span><span>Concordia:</span></span></strong
+                              ></span
+                            ></span
+                          ></span
+                        ><span
+                          ><span
+                            ><span
+                              ><span
+                                ><span
+                                  ><span>
+                                    The AI Pathways Partnership programs are actually new to
+                                    Concordia so really, it has been exciting to be able to come in
+                                    and hit the ground running and deal with a relatively large
+                                    cohort of students and to be able to meet their needs.The
+                                    support we receive from ISAIC is really quick and were easily
+                                    implemented. We have nothing to worry ourselves about the
+                                    technical details and when it came to building and implementing,
+                                    ISAIC came to help the large cohort of students.</span
+                                  ></span
+                                ></span
+                              ></span
+                            ></span
+                          ></span
+                        >
+                      </p>
+
+                      <p>
+                        <span
+                          ><span
+                            ><span
+                              ><strong
+                                ><span><span>Cybera:</span></span></strong
+                              ></span
+                            ></span
+                          ></span
+                        ><span
+                          ><span
+                            ><span
+                              ><span
+                                ><span
+                                  ><span>
+                                    In terms of problem solving, Cybera does quite a range of things
+                                    from data wrangling to the development of ML proof of concept
+                                    and prototype projects, working with small data sets, as well as
+                                    big data sets. We really are trying to apply the
+                                    state-of-the-art technologies and tools to these problems to
+                                    solve whatever business problems people are facing.We do our
+                                    best to engage clients and help them throughout their journey
+                                    because oftentimes, this was our clients’ first foray into data
+                                    science or AI.</span
+                                  ></span
+                                ></span
+                              ></span
+                            ></span
+                          ></span
+                        >
+                      </p>
+
+                      <p>
+                        <span
+                          ><span
+                            ><span
+                              ><strong
+                                ><span><span>Pulse Medica:</span></span></strong
+                              ></span
+                            ></span
+                          ></span
+                        ><span
+                          ><span
+                            ><span
+                              ><span
+                                ><span
+                                  ><span>
+                                    Pulse Medica is founded in mid 2020 and we have been operating
+                                    for about 2 years as a company. We had two successful
+                                    fundraising rounds. We’ve built a world class team of engineers
+                                    - we’re about 22 individuals in the company and we essentially
+                                    have two prototypes that we’re going to put into clinics here in
+                                    Edmonton. We’re just in the process of getting approvals from
+                                    Health Canada. So, it’s very exciting so far and a lot of
+                                    success in terms of ML.</span
+                                  ></span
+                                ></span
+                              ></span
+                            ></span
+                          ></span
+                        >
+                      </p>
+
+                      <p> </p>
+
+                      <p>
+                        <span
+                          ><span
+                            ><span
+                              ><span
+                                ><em><span>ISAIC:</span></em></span
+                              ></span
+                            ></span
+                          ></span
+                        ><span
+                          ><span
+                            ><span
+                              ><span
+                                ><span
+                                  ><span>
+                                    Now, let’s shift a little bit to infrastructure. What cloud
+                                    services have you used before and can you tell us your
+                                    expectations before ISAIC?</span
+                                  ></span
+                                ></span
+                              ></span
+                            ></span
+                          ></span
+                        >
+                      </p>
+
+                      <p>
+                        <span
+                          ><span
+                            ><span
+                              ><strong
+                                ><span><span>Concordia:</span></span></strong
+                              ></span
+                            ></span
+                          ></span
+                        ><span
+                          ><span
+                            ><span
+                              ><span
+                                ><span
+                                  ><span>
+                                    We used PLO before in a number of contexts from an IT point of
+                                    view. We’ve used the big names that you may have heard before,
+                                    providing some of our infrastructures for just general campus
+                                    and campus operations. We also have a really good relationship
+                                    with Cybera and we used their
+                                  </span></span
+                                ></span
+                              ></span
+                            ></span
+                          ></span
+                        ><a href="https://www.cybera.ca/rapid-access-cloud/"
+                          ><span
+                            ><span
+                              ><span
+                                ><span
+                                  ><span
+                                    ><span
+                                      ><span><span>Rapid Access Cloud</span></span></span
+                                    ></span
+                                  ></span
+                                ></span
+                              ></span
+                            ></span
+                          ></a
+                        ><span
+                          ><span
+                            ><span
+                              ><span
+                                ><span
+                                  ><span
+                                    >. But when we’re looking at designing the new course programs,
+                                    we really need something that has a lot more purpose built in
+                                    and a much more tailored fit for what we’re doing in the ML
+                                    program. That’s how we turned to ISAIC. We needed a partner that
+                                    understood our needs as an educational institution and who was
+                                    able to sit down with us to understand what we were trying to
+                                    accomplish and how we’re going to do that to make sure that
+                                    we’re building a solution that fits the needs of our students,
+                                    rather than just taking something off-the-shelf (that is
+                                    static). Folks at ISAIC really helped us making sure that we get
+                                    exactly the right build for our use case.</span
+                                  ></span
+                                ></span
+                              ></span
+                            ></span
+                          ></span
+                        >
+                      </p>
+
+                      <p>
+                        <span
+                          ><span
+                            ><span
+                              ><strong
+                                ><span><span>Cybera:</span></span></strong
+                              ></span
+                            ></span
+                          ></span
+                        ><span
+                          ><span
+                            ><span
+                              ><span
+                                ><span
+                                  ><span>
+                                    Cybera has a pretty long experience with cloud computing - I
+                                    think for about 12 years now. We were the first in establishing
+                                    an open stack production environment in the world and in
+                                    Alberta. So, we have quite a bit of experience running our own
+                                    Rapid Access Cloud environment. Internally, we encourage our
+                                    data science team (data scientists and developers) to use cloud
+                                    computing infrastructure and resources to manage their data.
+                                    Cloud computing is great and you should use cloud computing. We
+                                    also try to leverage cloud computing in our projects, including
+                                    the data science projects.</span
+                                  ></span
+                                ></span
+                              ></span
+                            ></span
+                          ></span
+                        >
+                      </p>
+
+                      <p>
+                        <span
+                          ><span
+                            ><span
+                              ><strong
+                                ><span><span>Pulse Medica:</span></span></strong
+                              ></span
+                            ></span
+                          ></span
+                        ><span
+                          ><span
+                            ><span
+                              ><span
+                                ><span
+                                  ><span>
+                                    Regarding data, we have access to one of the largest image
+                                    databases in the world. We deal with tons and tons of data. In
+                                    terms of cloud infrastructure, it was really difficult to
+                                    predict what kind of resources we needed particularly when it
+                                    comes to the kind of GPUs and memory we need, as well as storing
+                                    the data, which can be expensive. Being able to explore without
+                                    a huge capital investment on our part, as well as being able to
+                                    scale the resources (adding GPUs, etc.) was very
+                                    important. </span
+                                  ></span
+                                ></span
+                              ></span
+                            ></span
+                          ></span
+                        >
+                      </p>
+
+                      <p>
+                        <span
+                          ><span
+                            ><span
+                              ><span
+                                ><span
+                                  ><span
+                                    >We were looking for a local place to store the data and do all
+                                    of our computations and processes because we’re dealing with
+                                    sensitive patient information. We wanted to make sure that the
+                                    data is put in a safe place that is local here and that was the
+                                    opportunity to collaborate with ISAIC.</span
+                                  ></span
+                                ></span
+                              ></span
+                            ></span
+                          ></span
+                        >
+                      </p>
+
+                      <p> </p>
+
+                      <p>
+                        <span
+                          ><span
+                            ><span
+                              ><span
+                                ><em><span>ISAIC:</span></em></span
+                              ></span
+                            ></span
+                          ></span
+                        ><span
+                          ><span
+                            ><span
+                              ><span
+                                ><span
+                                  ><span> How did you get to know about ISAIC?</span></span
+                                ></span
+                              ></span
+                            ></span
+                          ></span
+                        >
+                      </p>
+
+                      <p>
+                        <span
+                          ><span
+                            ><span
+                              ><strong
+                                ><span><span>Concordia:</span></span></strong
+                              ></span
+                            ></span
+                          ></span
+                        ><span
+                          ><span
+                            ><span
+                              ><span
+                                ><span
+                                  ><span>
+                                    Well, some of the partners we’ve been working with through AI
+                                    Pathways Partnership are also partners of ISAIC. AIPP has really
+                                    been the centre of building bridges.</span
+                                  ></span
+                                ></span
+                              ></span
+                            ></span
+                          ></span
+                        >
+                      </p>
+
+                      <p>
+                        <span
+                          ><span
+                            ><span
+                              ><strong
+                                ><span><span>Cybera:</span></span></strong
+                              ></span
+                            ></span
+                          ></span
+                        ><span
+                          ><span
+                            ><span
+                              ><span
+                                ><span
+                                  ><span>
+                                    Sure. So, based on our experience setting up our own cloud
+                                    infrastructure service, Rapid Access Cloud, we helped advise
+                                    ISAIC right from the get go. For example, we discussed the
+                                    options they might have in terms of setting up their
+                                    infrastructure and we provided advice and lessons learned in
+                                    terms of what worked for Cybera and what didn’t work well for
+                                    us. I think ISAIC definitely took the information and turned it
+                                    to services with really nice products and really nice services
+                                    that are user-friendly.</span
+                                  ></span
+                                ></span
+                              ></span
+                            ></span
+                          ></span
+                        >
+                      </p>
+
+                      <p>
+                        <span
+                          ><span
+                            ><span
+                              ><strong
+                                ><span><span>Pulse Medica:</span></span></strong
+                              ></span
+                            ></span
+                          ></span
+                        ><span
+                          ><span
+                            ><span
+                              ><span
+                                ><span
+                                  ><span>
+                                    It is kind of an interesting conversation because what happened
+                                    was that Pulse Medica was just started and we had this shared
+                                    space to sit at the University of Alberta (we were a spin-off
+                                    company from the university). In that shared space, we got to
+                                    know about ISAIC and we asked them what they were doing. They
+                                    mentioned infrastructure and long story short, we built a
+                                    relationship and we have been working together for about two
+                                    years now. </span
+                                  ></span
+                                ></span
+                              ></span
+                            ></span
+                          ></span
+                        >
+                      </p>
+
+                      <p> </p>
+
+                      <p>
+                        <span
+                          ><span
+                            ><span
+                              ><span
+                                ><em><span>To be continued</span></em></span
+                              ></span
+                            ></span
+                          ></span
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </main>
+
+        <footer role="contentinfo">
+          <div class="region region-footer">
+            <div
+              id="block-isaic-theme-footer"
+              class="block block-block-content block-block-content2a27caef-c5c6-4018-8b94-b930d314c05b"
+            >
+              <div
+                class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"
+              >
+                <style type="text/css">
+                  <!--/*--><![CDATA[/* ><!--*/
+
+<!--/*--><![CDATA[/* ><!--*/
+@media screen and (min-width: 768px) {
+                    div.footer {
+                      padding-top: 0px;
+                    }
+
+                    div.footer .container {
+                      max-width: 100%;
+                    }
+
+                    .region.region-footer {
+                      padding-top: 15px;
+                    }
+                  }
+
+                  /*--><!]]]]><![CDATA[>*/
+
+                  /*--><!]]>*/
+                </style>
+                <div class="footer dark white" id="contact">
+                  <div class="container">
+                    <div class="footer-3col">
+                      <div class="footer-col">
+                        <div class="footer-logo-cont">
+                          <img
+                            alt=""
+                            src="/sites/default/files/inline-images/isaic-icon-logo.png"
+                          />
+                        </div>
+
+                        <div class="footer-logo-cont">
+                          <img
+                            alt="uoa"
+                            data-entity-type="file"
+                            data-entity-uuid="71eab528-2346-4cd2-ae9b-d3da5538a751"
+                            height="39"
+                            src="/sites/default/files/inline-images/university-of-alberta_0.png"
+                            width="165"
+                            loading="lazy"
+                          />
+                        </div>
+
+                        <div class="footer-logo-cont"> </div>
+                      </div>
+
+                      <div class="footer-col">
+                        <h3 class="heavy">EXPLORE</h3>
+
+                        <p class="footer-link-text">
+                          <a class="footer-link white" href="/index">Home</a>
+                        </p>
+
+                        <p class="footer-link-text">
+                          <a class="footer-link white" href="/ai-garage">AI Garage</a>
+                        </p>
+
+                        <p class="footer-link-text">
+                          <a class="footer-link white" href="/data-sandbox">Data Sandbox</a>
+                        </p>
+
+                        <p class="footer-link-text">
+                          <a class="footer-link white" href="/applied-knowledge-hub"
+                            >Applied Knowledge Hub</a
+                          >
+                        </p>
+
+                        <p class="footer-link-text">
+                          <a class="footer-link white" href="/about">About</a>
+                        </p>
+                      </div>
+
+                      <div class="footer-col">
+                        <h3 class="heavy">MORE INFORMATION</h3>
+
+                        <p class="footer-link-text">
+                          <a class="footer-link white" href="/contact">Contact Us</a>
+                        </p>
+
+                        <p class="footer-link-text">
+                          <a class="footer-link white" href="/faqs">FAQs</a>
+                        </p>
+
+                        <p class="footer-link-text">
+                          <a class="footer-link white" href="/privacy-policy">Privacy Policy</a>
+                        </p>
+                      </div>
+
+                      <div class="footer-col">
+                        <h3 class="heavy">STAY CONNECTED</h3>
+                        <a class="footer-link social-icon" href="mailto:isaic@ualberta.ca"
+                          ><img
+                            alt=""
+                            class="social-icon mail"
+                            src="/sites/default/files/inline-images/icon-mail.png"
+                          />
+                        </a>
+                        <a
+                          class="footer-link social-icon temp-hidden"
+                          href="https://www.linkedin.com/company/69370854/"
+                          target="”_blank”"
+                        >
+                          <img
+                            alt=""
+                            class="social-icon"
+                            src="/sites/default/files/inline-images/linkedin-icon.png"
+                          />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+
+    <script type="application/json" data-drupal-selector="drupal-settings-json">
+      {
+        "path": {
+          "baseUrl": "/",
+          "scriptPath": null,
+          "pathPrefix": "",
+          "currentPath": "node/18",
+          "currentPathIsAdmin": false,
+          "isFront": false,
+          "currentLanguage": "en"
+        },
+        "pluralDelimiter": "",
+        "suppressDeprecationErrors": true,
+        "google_analytics": {
+          "account": "UA-197854341-1",
+          "trackOutbound": true,
+          "trackMailto": true,
+          "trackDownload": true,
+          "trackDownloadExtensions": "7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip",
+          "trackDomainMode": 1
+        },
+        "user": {
+          "uid": 0,
+          "permissionsHash": "863b0e34fab61766924d754759935ff5491d79e9bad9e2f610787431d33d1944"
+        }
+      }
+    </script>
+    <script src="/sites/default/files/js/main.js"></script>
+  </body>
+</html>

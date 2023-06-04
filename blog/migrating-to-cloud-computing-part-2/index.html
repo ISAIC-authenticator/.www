@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html
+  lang="en"
+  dir="ltr"
+  prefix="content: http://purl.org/rss/1.0/modules/content/  dc: http://purl.org/dc/terms/  foaf: http://xmlns.com/foaf/0.1/  og: http://ogp.me/ns#  rdfs: http://www.w3.org/2000/01/rdf-schema#  schema: http://schema.org/  sioc: http://rdfs.org/sioc/ns#  sioct: http://rdfs.org/sioc/types#  skos: http://www.w3.org/2004/02/skos/core#  xsd: http://www.w3.org/2001/XMLSchema# "
+>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-197854341-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', 'UA-197854341-1', { groups: 'default', anonymize_ip: true });
+    </script>
+    <meta name="Generator" content="Drupal 9 (https://www.drupal.org)" />
+    <meta name="MobileOptimized" content="width" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/themes/isaic_theme/faviconv2.png" type="image/png" />
+    <link rel="canonical" href="https://isaic.ca/blog/migrating-to-cloud-computing-part-2" />
+    <link rel="shortlink" href="https://isaic.ca/blog/migrating-to-cloud-computing-part-2" />
+
+    <title>
+      Migrating to Cloud Computing Part 2: Interview with Concordia, Cybera, and Pulse Medica |
+      ISAIC
+    </title>
+    <link
+      rel="stylesheet"
+      media="all"
+      href="/sites/default/files/css/css_1ZdPdPMpX8ch16Dsgzh8-trW9PbrKvK7yJNhYQ99ENA.css"
+    />
+  </head>
+  <body class="pushable">
+    <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+      <div class="layout-container">
+        <header>
+          <div class="region region-header">
+            <div
+              id="block-isaic-theme-header"
+              class="block block-block-content block-block-content7dd88fcc-da91-4fa3-acc2-4dca040f53b9"
+            >
+              <div
+                class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"
+              >
+                <div class="header">
+                  <div class="callout-header">
+                    <div class="container">
+                      <a class="callout-link" href="/contact"
+                        >Book a discovery or test our environment today!</a
+                      >
+                    </div>
+                  </div>
+
+                  <div class="container flex-cont">
+                    <div class="nav-logo-holder">
+                      <a class="logo-link top-logo" href="/index"
+                        ><img
+                          alt=""
+                          class="logo-icon"
+                          src="/sites/default/files/inline-images/logo-small.png"
+                        />
+                      </a>
+                      <a class="logo-link bot-logo" href="/index">
+                        <img
+                          alt=""
+                          class="logo-icon"
+                          src="/sites/default/files/inline-images/isaic-icon-logo.png"
+                        />
+                      </a>
+                    </div>
+                    <button class="hamburger is-active" type="button">
+                      <span class="hamburger-box"><span class="hamburger-inner">‌</span> </span>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="slide-in-menu">
+                  <div class="nav-cont">
+                    <a class="menu-link" href="/index"
+                      ><img alt="" src="/sites/default/files/inline-images/isaic-white-logo.png"
+                    /></a>
+
+                    <ul class="menu-list">
+                      <li class="menu-item"><a class="menu-link" href="/index">Home</a></li>
+                      <li class="menu-item">
+                        <a class="menu-link" href="/ai-garage">AI Garage</a>
+                      </li>
+                      <li class="menu-item">
+                        <a class="menu-link" href="https://vmod.isaic.ca">VM on Demand</a>
+                      </li>
+                      <li class="menu-item">
+                        <a class="menu-link" href="/ai-journey">AI Journey</a>
+                      </li>
+                      <li class="menu-item">
+                        <a class="menu-link" href="/compute-configurations">Configurations</a>
+                      </li>
+                      <li class="menu-item">
+                        <a class="menu-link" href="/data-sandbox">Data Sandbox</a>
+                      </li>
+                      <li class="menu-item">
+                        <a class="menu-link" href="/offerings">Offerings</a>
+                      </li>
+                      <li class="menu-item">
+                        <a class="menu-link" href="/pricing">Pricing</a>
+                      </li>
+                      <li class="menu-item"><a class="menu-link" href="/about">About</a></li>
+                      <li class="menu-item"><a class="menu-link" href="/blog">Blog</a></li>
+                      <li class="menu-item">
+                        <a class="menu-link" href="/contact">Contact</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+
+        <main role="main">
+          <a id="main-content" tabindex="-1"></a>
+          <div class="layout-content">
+            <div class="region region-content">
+              <div data-drupal-messages-fallback class="hidden"></div>
+              <div
+                id="block-isaic-theme-page-title"
+                class="block block-core block-page-title-block"
+              >
+                <h1 class="page-title">
+                  <span class="field field--name-title field--type-string field--label-hidden"
+                    >Migrating to Cloud Computing Part 2: Interview with Concordia, Cybera, and
+                    Pulse Medica</span
+                  >
+                </h1>
+              </div>
+              <div
+                id="block-isaic-theme-content"
+                class="block block-system block-system-main-block"
+              >
+                <article
+                  data-history-node-id="19"
+                  role="article"
+                  about="/blog/migrating-to-cloud-computing-part-2"
+                  class="node node--type-blog node--view-mode-full"
+                >
+                  <div class="node__content">
+                    <div
+                      class="field field--name-field-author field--type-string field--label-above"
+                    >
+                      <div class="field__label">Author</div>
+                      <div class="field__item">ISAIC</div>
+                    </div>
+
+                    <div
+                      class="field field--name-field-blog-date field--type-datetime field--label-above"
+                    >
+                      <div class="field__label">Date</div>
+                      <div class="field__item">
+                        <time datetime="2022-07-14T12:00:00Z" class="datetime">2022-07-14</time>
+                      </div>
+                    </div>
+
+                    <div
+                      class="field field--name-field-banner-image field--type-image field--label-hidden field__item"
+                    >
+                      <img
+                        src="/sites/default/files/styles/extra_large/public/2022-07/migrating-to-cloud-computing-part-2.jpg@itok=2-ZWDViL"
+                        width="665"
+                        height="374"
+                        alt="migrating-to-cloud-computing-part-2-isaic"
+                        loading="lazy"
+                        typeof="foaf:Image"
+                        class="image-style-extra-large"
+                      />
+                    </div>
+
+                    <div
+                      class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"
+                    >
+                      <script id="mcjs">
+                        <!--//--><![CDATA[// ><!--
+                        !(function (c, h, i, m, p) {
+                          (m = c.createElement(h)),
+                            (p = c.getElementsByTagName(h)[0]),
+                            (m.async = 1),
+                            (m.src = i),
+                            p.parentNode.insertBefore(m, p);
+                        })(
+                          document,
+                          'script',
+                          'https://chimpstatic.com/mcjs-connected/js/users/024e59293b8cf498e458fad19/24cf431dd5db0b9b3019e6993.js'
+                        );
+                        //--><!]]>
+                      </script>
+                      <script>
+                        <!--//--><![CDATA[// ><!--
+                        cookieStore.delete('MCPopupClosed');
+                        //--><!]]>
+                      </script>
+                      <p>
+                        According to
+                        <a
+                          href="http://filecache.mediaroom.com/mr5mr_ibmnews/183710/Roadblock-to-Scale-exec-summary.pdf"
+                          >IBM’s study in 2019</a
+                        >, almost 50% large companies adopted AI while small medium enterprises
+                        (SMEs) adopted only 30%. One of the requirements to adopt AI is to have the
+                        appropriate infrastructure and ISAIC is here to help you migrate to the
+                        cloud.
+                      </p>
+
+                      <p>
+                        In celebration of its anniversary, Alberta Machine Intelligence Institute
+                        (AMII) hosted <a href="https://www.ai-week.ca/">AI Week</a> from May 24-27,
+                        2022. ISAIC proudly took part in the community events of AI Week, presenting
+                        to almost 60 people about Cloud Computing Migration.
+                      </p>
+
+                      <p> </p>
+
+                      <p><em>Continued</em></p>
+
+                      <p>
+                        <em
+                          >ISAIC: Can you tell us more about the service that ISAIC provides for
+                          you? </em
+                        >
+                      </p>
+
+                      <p>
+                        <strong>Concordia:</strong> ​​For us, primarily that takes the form of
+                        Jupyter installations. Our students are often using Jupyter Notebooks which
+                        are sort of interactive Python Notebooks that they can access through their
+                        browser. In our case, those are backed by GPU-enabled instances which are
+                        very important for machine learning and AI. That’s really allowed our
+                        students to build experiments and build models that really reiterate on the
+                        projects that they’re working on in a rapid turnaround fashion. We also use
+                        a few virtual machines in that traditional sense but for our students, it’s
+                        primarily through having that purpose built JupyterHub installation. 
+                      </p>
+
+                      <p>
+                        <strong>Cybera:</strong> We’ve collaborated with ISAIC on the
+                        <a href="https://www.cybera.ca/fellowships/">fellowship program</a> but also
+                        on different consultations and events such as Hackathons. Typically, we’ve
+                        been using the <a href="https://vmod.isaic.ca/">VM on Demand</a> service and
+                        in the case of the fellowship program, each of our aspiring or emerging data
+                        scientists get assigned a VM on Demand and they can use that VM for their
+                        entire project. These projects are connected to businesses, business ideas
+                        and business problems and these businesses can decide to continue on using
+                        the ISAIC services. 
+                      </p>
+
+                      <p>
+                        Our client base will come to us with data science problems but once we’ve
+                        wrapped up on our side of things, they’re looking for support on the
+                        infrastructure side so we connect with ISAIC to further their development
+                        and their use of cloud infrastructure.
+                      </p>
+
+                      <p>
+                        <strong>Pulse Medica:</strong> We have a virtual machine at ISAIC that gets
+                        used almost 24/7. When we started, it was just one team member for a single
+                        project but now we distribute those resources across multiple people for
+                        multiple projects so, it’s a lot of usage. 
+                      </p>
+
+                      <p> </p>
+
+                      <p>
+                        <em
+                          >ISAIC: Now, can you elaborate on why you chose cloud infrastructure and
+                          some of its advantages?</em
+                        >
+                      </p>
+
+                      <p>
+                        <strong>Concordia:</strong> The devil’s in the details, as they say. There’s
+                        a lot involved to make sure we’re right-sizing our equipment, that we’re
+                        building a service that’s going to be sufficient for students in all of the
+                        different ways they need to operate, and we need to be able to scale it when
+                        we have changs in student enrollment. That always means growth and the
+                        ability for us to rapidly turn that around by dealing with a group that has
+                        a lot of expertise in operating this infrastructure has been really
+                        invaluable. 
+                      </p>
+
+                      <p>
+                        <strong>Cybera:</strong> Some of the biggest things around cloud
+                        infrastructure is you can leverage it to do things you just can’t do on your
+                        own laptop, for example. The power of cloud computing is pretty profound,
+                        you can scale up your efforts really easily. With the cost of cloud
+                        computing going down, with access to cloud computing increasing, there’s no
+                        reason to limit yourself to what you have. You can easily go out there and
+                        find cloud service providers like ISAIC, so the barrier to adoption has
+                        significantly dropped. ISAIC’s hands-on concierge type service makes it easy
+                        and less intimidating to take that first step and really engage. The user
+                        interface has made infrastructure as a service less intimidating as well.
+                        Through ISAIC’s approach, they’ve really reduced the barrier to usage and
+                        adoption. 
+                      </p>
+
+                      <p>
+                        <strong>Pulse Medica:</strong> A key concern is the ability to explore the
+                        scale of resources we need without having to invest in hardware ourselves,
+                        and that’s what ISAIC allowed us to do. Within a few days, we can spin
+                        another GPU and add that to our resources. Also, because we’re growing very
+                        quickly, collaboration is really important between team members. It’s a lot
+                        easier to do that if you have a centralized system and resources that we can
+                        coordinate. 
+                      </p>
+
+                      <p>
+                        I want to add another point about security. We don’t have to manage our own
+                        systems and security for data which is key, and that’s something that ISAIC
+                        is handling and we don’t have to think about. 
+                      </p>
+
+                      <p>
+                        <br />
+                        <br />
+                        <em
+                          >ISAIC: If I may ask, how do you see yourself growing in terms of
+                          infrastructure?</em
+                        >
+                      </p>
+
+                      <p>
+                        <strong>Concordia:</strong> Concordia has been seeing rapid student growth
+                        in all areas over the past few years and that’s been really exciting, but
+                        also really, really challenging. From an IT perspective, it’s put a lot of
+                        stress on a lot of our systems and the ways we interact with students. To be
+                        working with a partner that understands provisioning these kinds of systems,
+                        means that this critical aspect of the student experience is not something I
+                        need to be worried about or dealing with on a reactive basis. Having someone
+                        to contact, to deal with, who understands the problem space, has been
+                        really, really helpful. 
+                      </p>
+
+                      <p>
+                        <strong>Cybera:</strong> As new projects come to us, we imagine these
+                        projects will change and grow with complexity and require more computing
+                        infrastructure requirements as well. To meet those needs, we can’t always do
+                        that ourselves in our own cloud computing environment, so we reach out to
+                        the experts and ISAIC to really help us out. ISAIC’s infrastructure is
+                        definitely state of the art so we’re happy to engage with you to effectively
+                        run our projects and produce solutions for our clients. 
+                      </p>
+
+                      <p>
+                        <strong>Pulse Medica:</strong> I suspect our company is going to divide more
+                        in two, one is on the R&amp;D side. We’re going to be adding more machine
+                        learning research and development team members and we’re going to need a lot
+                        more resources, not just in the number of GPUs, but also the type of GPUs. I
+                        know ISAIC recently added some more high end GPU models that we’re really
+                        excited to try out and we’d love to expand into that space and those
+                        resources. Also, expand on how we store patient data and the amount of
+                        patient data, those resources which we’d like to utilize ISAIC for as well. 
+                      </p>
+
+                      <p>
+                        <br />
+                        <em
+                          >ISAIC: Thank you. Do you have any last words of advice regarding cloud
+                          adoption?</em
+                        >
+                      </p>
+
+                      <p>
+                        <strong>Concordia:</strong> To some degree, adopting cloud solutions is
+                        inevitable. Everyone needs to scale and people’s needs, all across the
+                        board, are shifting so rapidly that I don’t think in-house solutions are
+                        going to cut it. When it comes to a lot of those dynamic experiences or the
+                        needs of fluctuating populations, like the student body, or even your
+                        research cohort when it comes to faculty, there’s a lot of variables in
+                        play. Having someone you can call on to scale rapidly is really, really
+                        invaluable. 
+                      </p>
+
+                      <p>
+                        <strong>Cybera:</strong> As I was saying before, there’s so many options now
+                        in terms of getting started that you shouldn’t be intimated to take that
+                        first step. I definitely encourage anyone to just jump in headfirst and get
+                        started because there really is very little reason for you not to start to
+                        explore and experiment. <br />
+                         
+                      </p>
+
+                      <p>
+                        <strong>Pulse Medica:</strong> My main advice would be to learn to use tools
+                        like <a href="https://git-scm.com/">Git</a> and
+                        <a href="https://github.com/">GitHub</a>, but also tools like
+                        <a href="https://dvc.org/">DVC</a>, Data Version Control, so you can manage
+                        your datasets and reproduce projects really quickly for multiple people.
+                        That’s really important for cloud; to track what’s going and track progress
+                        in their different projects.
+                      </p>
+
+                      <p> </p>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </main>
+
+        <footer role="contentinfo">
+          <div class="region region-footer">
+            <div
+              id="block-isaic-theme-footer"
+              class="block block-block-content block-block-content2a27caef-c5c6-4018-8b94-b930d314c05b"
+            >
+              <div
+                class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"
+              >
+                <style type="text/css">
+                  <!--/*--><![CDATA[/* ><!--*/
+
+<!--/*--><![CDATA[/* ><!--*/
+@media screen and (min-width: 768px) {
+                    div.footer {
+                      padding-top: 0px;
+                    }
+
+                    div.footer .container {
+                      max-width: 100%;
+                    }
+
+                    .region.region-footer {
+                      padding-top: 15px;
+                    }
+                  }
+
+                  /*--><!]]]]><![CDATA[>*/
+
+                  /*--><!]]>*/
+                </style>
+                <div class="footer dark white" id="contact">
+                  <div class="container">
+                    <div class="footer-3col">
+                      <div class="footer-col">
+                        <div class="footer-logo-cont">
+                          <img
+                            alt=""
+                            src="/sites/default/files/inline-images/isaic-icon-logo.png"
+                          />
+                        </div>
+
+                        <div class="footer-logo-cont">
+                          <img
+                            alt="uoa"
+                            data-entity-type="file"
+                            data-entity-uuid="71eab528-2346-4cd2-ae9b-d3da5538a751"
+                            height="39"
+                            src="/sites/default/files/inline-images/university-of-alberta_0.png"
+                            width="165"
+                            loading="lazy"
+                          />
+                        </div>
+
+                        <div class="footer-logo-cont"> </div>
+                      </div>
+
+                      <div class="footer-col">
+                        <h3 class="heavy">EXPLORE</h3>
+
+                        <p class="footer-link-text">
+                          <a class="footer-link white" href="/index">Home</a>
+                        </p>
+
+                        <p class="footer-link-text">
+                          <a class="footer-link white" href="/ai-garage">AI Garage</a>
+                        </p>
+
+                        <p class="footer-link-text">
+                          <a class="footer-link white" href="/data-sandbox">Data Sandbox</a>
+                        </p>
+
+                        <p class="footer-link-text">
+                          <a class="footer-link white" href="/applied-knowledge-hub"
+                            >Applied Knowledge Hub</a
+                          >
+                        </p>
+
+                        <p class="footer-link-text">
+                          <a class="footer-link white" href="/about">About</a>
+                        </p>
+                      </div>
+
+                      <div class="footer-col">
+                        <h3 class="heavy">MORE INFORMATION</h3>
+
+                        <p class="footer-link-text">
+                          <a class="footer-link white" href="/contact">Contact Us</a>
+                        </p>
+
+                        <p class="footer-link-text">
+                          <a class="footer-link white" href="/faqs">FAQs</a>
+                        </p>
+
+                        <p class="footer-link-text">
+                          <a class="footer-link white" href="/privacy-policy">Privacy Policy</a>
+                        </p>
+                      </div>
+
+                      <div class="footer-col">
+                        <h3 class="heavy">STAY CONNECTED</h3>
+                        <a class="footer-link social-icon" href="mailto:isaic@ualberta.ca"
+                          ><img
+                            alt=""
+                            class="social-icon mail"
+                            src="/sites/default/files/inline-images/icon-mail.png"
+                          />
+                        </a>
+                        <a
+                          class="footer-link social-icon temp-hidden"
+                          href="https://www.linkedin.com/company/69370854/"
+                          target="”_blank”"
+                        >
+                          <img
+                            alt=""
+                            class="social-icon"
+                            src="/sites/default/files/inline-images/linkedin-icon.png"
+                          />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+
+    <script type="application/json" data-drupal-selector="drupal-settings-json">
+      {
+        "path": {
+          "baseUrl": "/",
+          "scriptPath": null,
+          "pathPrefix": "",
+          "currentPath": "node/19",
+          "currentPathIsAdmin": false,
+          "isFront": false,
+          "currentLanguage": "en"
+        },
+        "pluralDelimiter": "",
+        "suppressDeprecationErrors": true,
+        "google_analytics": {
+          "account": "UA-197854341-1",
+          "trackOutbound": true,
+          "trackMailto": true,
+          "trackDownload": true,
+          "trackDownloadExtensions": "7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip",
+          "trackDomainMode": 1
+        },
+        "user": {
+          "uid": 0,
+          "permissionsHash": "863b0e34fab61766924d754759935ff5491d79e9bad9e2f610787431d33d1944"
+        }
+      }
+    </script>
+    <script src="/sites/default/files/js/main.js"></script>
+  </body>
+</html>
